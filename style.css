@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
-
-html,
-body {
+html, body {
   margin: 0;
   border: 0;
-  font-family: 'Roboto', sans-serif;
-}
+  font-family: 'Roboto', sans-serif;}
 
 .header {
   display: grid;
@@ -30,11 +27,20 @@ h4 {
 }
 
 img {
-  display: block;
+  display: grid;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 959px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
+img {
+  max-width: 100%;
+}
+
+}
+  @media (max-width: 960px) {
+    img {
+      width: 100%;
+    }
 }
